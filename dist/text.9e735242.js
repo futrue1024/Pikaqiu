@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"AI3t":[function(require,module,exports) {
 "use strict";var t=e(require("./css.js"));function e(t){return t&&t.__esModule?t:{default:t}}var n,l=0,u=document.querySelector("#demo"),r=document.querySelector("#text1");html.scrollTop=html.scrollHeight;var o=100,c={init:function(){u.innerHTML=t.default.substring(0,l),r.innerText=t.default.substring(0,l),c.paly(),c.bindsEvents()},bindsEvents:function(){document.querySelector("#btnPause").onclick=c.pause,document.querySelector("#btnStart").onclick=c.paly,document.querySelector("#btnSlow").onclick=c.slow,document.querySelector("#btnFast").onclick=c.fast},run:function(){(l+=1)>t.default.length?window.clearInterval(n):(u.innerHTML=t.default.substring(0,l),r.innerText=t.default.substring(0,l),text.scrollTop=text.scrollHeight)},paly:function(){n=setInterval(c.run,o)},pause:function(){window.clearInterval(n)},slow:function(){c.pause(),o=500,c.paly()},fast:function(){c.pause(),o=20,c.paly()}};c.init();
 },{"./css.js":"K4Xi"}]},{},["AI3t"], null)
-//# sourceMappingURL=/text.9e735242.js.map
+//# sourceMappingURL=text.9e735242.js.map
