@@ -14,7 +14,6 @@ const player = {
     player.bindsEvents();
   },
   bindsEvents: () => {
-    events;
     document.querySelector("#btnPause").onclick = player.pause;
     document.querySelector("#btnStart").onclick = player.paly;
     document.querySelector("#btnSlow").onclick = player.slow;

@@ -149,7 +149,6 @@ var player = {
     player.bindsEvents();
   },
   bindsEvents: function bindsEvents() {
-    events;
     document.querySelector("#btnPause").onclick = player.pause;
     document.querySelector("#btnStart").onclick = player.paly;
     document.querySelector("#btnSlow").onclick = player.slow;
@@ -216,7 +215,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49791" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58710" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
